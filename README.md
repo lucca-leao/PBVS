@@ -3,13 +3,8 @@
 This repository contains a ROS driver to control Kuka KR4 R600 robot, including a script to perform Position Based Visual Servo (PBVS).
 
 
-## How to use
+## Instructions
 
-#### TODO
-- [ ] Setup network (robot & host)
-- [ ] Copy .src files to robot & fix AXIS_SET issue
-- [ ] Build docker
-- [ ] Execute commands
 
 
 ### Steps on Host
