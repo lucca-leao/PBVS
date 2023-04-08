@@ -33,7 +33,10 @@ roslaunch kuka_kvp_hw_interface test_joint_command_interface.launch
 ```sh
 roslaunch kuka_kr4_moveit demo.launch
 ```
-
+- Execute the following commands to run PBVS:
+```
+python3 kuka_control/src/PBVS.py
+```
 
 ## Third Party
 - [Kuka KR4 R600 Model](https://github.com/isys-vision/kuka_experimental/blob/kr4r600/kuka_eki_hw_interface/src/kuka_eki_hw_interface.cpp)
