@@ -1,0 +1,24 @@
+version: "2.2"
+services:
+  feederproc_service:
+    image: ivision/kuka-kr4-ros:v1.0
+    container_name: kuka_ros
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - KUKA_IP=192.168.50.205
+        - KUKA_PORT=7000
+        - ROS_SERVER=127.0.0.1
+        - ROS_PORT=9000
+    network_mode: host
+    environment:
+      - DISPLAY
+    ipc: host
+    restart: always 
+    volumes:
+    - $HOME/.Xauthority:/root/.Xauthority:rw
+    - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    - ./catkin_ws/src:/catkin_ws/src/
+    privileged: true
+    # command: /bin/bash -c '. /opt/ros/noetic/setup.bash && . /catkin_ws/devel/setup.bash && cd /catkin_ws/ && . /entrypoint.sh'
