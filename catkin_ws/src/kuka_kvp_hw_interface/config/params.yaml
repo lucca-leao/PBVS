@@ -1,0 +1,2 @@
+  robot_ip_address: "192.168.50.205"
+  force_torque_sensor_frame: "tool0"
