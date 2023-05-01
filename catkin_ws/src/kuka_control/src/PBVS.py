@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+'''
+    File name: PBVS.py
+    Author: Lucca Leão
+    Date created: 28/12/2022
+'''
+
 import sys
 import time
 import rospy
